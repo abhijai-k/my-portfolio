@@ -4,9 +4,10 @@ import React, { useState } from 'react';
 import ecommerceImage1 from '../components/assets/ecommerceImage1.png';
 import ecommerceImage2 from '../components/assets/ecommerceImage2.png';
 import ecommerceImage3 from '../components/assets/ecommerceImage3.png';
-import eventImage1 from '../components/assets/eventImage1.jpg';
-import eventImage2 from '../components/assets/eventImage2.jpg';
-import eventImage3 from '../components/assets/eventImage3.jpg';
+import eventImage1 from '../components/assets/eventImage1.png';
+import eventImage2 from '../components/assets/eventImage2.png';
+import hardwaresImage1 from '../components/assets/sj1.png';
+import hardwaresImage2 from '../components/assets/sj2.png';
 
 const Projects = () => {
   const [selectedImages, setSelectedImages] = useState([]);
@@ -17,15 +18,22 @@ const Projects = () => {
       title: 'eCommerce Website',
       description: 'A fully functional eCommerce platform built with React, featuring user authentication, a shopping cart, and secure checkout. The platform is designed to provide an optimal user experience across various devices, ensuring responsiveness and speed. Users can browse through a wide selection of products, add items to their cart, and complete purchases securely. Additionally, the website includes features such as user profiles, order history, and a search function to enhance usability. It is fully integrated with payment gateways, allowing for seamless transactions.',
       link: 'https://github.com/abhijai-k/ecommerce-website.git',
-      liveLink: 'https://my-ecommerce-websitee.netlify.app', // Replace with your live project link
-      images: [ecommerceImage1, ecommerceImage2, ecommerceImage3] // Image array
+      liveLink: 'https://my-ecommerce-websitee.netlify.app',
+      images: [ecommerceImage1, ecommerceImage2, ecommerceImage3]
     },
     {
       title: 'Event Management Website',
       description: 'This project, a dynamic event management platform, showcases my freelance work in developing a responsive single-page website using React. The site allows users to easily navigate through customizable event pages and provides key functionalities such as real-time updates and comprehensive analytics to enhance event planning and execution. Its responsive design guarantees optimal performance across all devices.',
       link: 'https://github.com/abhijai-k/event-management-website.git',
-      liveLink: 'https://devieventmanagement.site', // Replace with your live project link
-      images: [eventImage1, eventImage2, eventImage3] // Image array
+      liveLink: 'https://devieventmanagement.site',
+      images: [eventImage1, eventImage2]
+    },
+    {
+      title: 'Hardwares Shop Website',
+      description: 'A responsive React website designed to showcase a hardware shop\'s offerings. This project emphasizes user-friendly navigation and highlights various product categories, providing visitors with an easy way to explore available tools and materials. The site is optimized for different devices, ensuring a smooth browsing experience.',
+      link: 'https://github.com/abhijai-k/sj-hardwares.git', // Update with actual link
+      liveLink: 'https://sjhardwares.in', // Update with your live project link
+      images: [hardwaresImage1, hardwaresImage2] // Add actual image paths
     },
     {
       title: 'Skin Disease Prediction',
@@ -57,7 +65,7 @@ const Projects = () => {
                   <img
                     key={imgIndex}
                     src={image}
-                    alt={`Project ${index + 1} - View ${imgIndex + 1}`} // Updated alt text
+                    alt={`Project ${index + 1} - View ${imgIndex + 1}`}
                     className="cursor-pointer"
                     onClick={() => openModal(project.images)}
                   />
@@ -73,7 +81,7 @@ const Projects = () => {
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-red-600 text-white px-4 py-2 rounded-md animate-pulse" // Continuous pulse animation
+                  className="bg-red-600 text-white px-4 py-2 rounded-md animate-pulse"
                 >
                   Live
                 </a>
@@ -90,7 +98,7 @@ const Projects = () => {
             <button onClick={closeModal} className="absolute top-0 right-0 m-2 text-white">X</button>
             <div className="flex overflow-x-auto">
               {selectedImages.map((image, imgIndex) => (
-                <img key={imgIndex} src={image} alt={`View of selected ${imgIndex + 1}`} className="w-full max-w-xs mx-2" /> // Updated alt text
+                <img key={imgIndex} src={image} alt={`View of selected ${imgIndex + 1}`} className="w-full max-w-xs mx-2" />
               ))}
             </div>
           </div>
