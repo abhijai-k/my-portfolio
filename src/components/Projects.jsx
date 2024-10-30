@@ -16,7 +16,7 @@ const Projects = () => {
   const projectData = [
     {
       title: 'eCommerce Website',
-      description: 'A fully functional eCommerce platform built with React, featuring user authentication, a shopping cart, and secure checkout. The platform is designed to provide an optimal user experience across various devices, ensuring responsiveness and speed. Users can browse through a wide selection of products, add items to their cart, and complete purchases securely. Additionally, the website includes features such as user profiles, order history, and a search function to enhance usability. It is fully integrated with payment gateways, allowing for seamless transactions.',
+      description: 'A fully functional eCommerce platform built with React, featuring user authentication, a shopping cart, and secure checkout. The platform is designed to provide an optimal user experience across various devices, ensuring responsiveness and speed. Users can browse through a wide selection of products, add items to their cart, and complete purchases securely. Additionally, the website includes features such as user profiles, order history, and a search function to enhance usability.',
       link: 'https://github.com/abhijai-k/ecommerce-website.git',
       liveLink: 'https://my-ecommerce-websitee.netlify.app',
       images: [ecommerceImage1, ecommerceImage2, ecommerceImage3]
