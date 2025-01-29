@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import meta from './assets/meta.jpg'; // Ensure this path is correct
+import meta from './assets/meta.png'; // Ensure this path is correct
 import udemy from './assets/udemy.jpg'
 
 const Certificates = () => {
